@@ -1,0 +1,7 @@
+file = "salert-all-15357133324846368479.xlsx"
+df = pd.read_excel(file)
+
+
+json_data = df.to_json(orient="records", force_ascii=False)
+
+print(json_data) 

@@ -10,8 +10,7 @@ from groq import Groq
 qclient = Groq(api_key=GROQ_API_KEY)
 
 st.title("Predicción Electoral")
-st.subheader("Evaluación Final - Desarrollo de Sistemas de Información")
-
+st.image("UCE.png")
 # Subir archivo Excel
 uploaded_file = st.file_uploader("Sube un archivo XLSX con los datos de votos", type=["xlsx"])
 
@@ -64,5 +63,4 @@ if uploaded_file:
         respuesta_bot = response.choices[0].message.content
         st.write("Respuesta del bot:", respuesta_bot)
 
-    # Subir a Git (mensaje informativo)
-    st.info("Recuerda subir el código al repositorio de Git para obtener el punto fina
+    
